@@ -1,0 +1,122 @@
+.advantages__slogan {
+  padding: 32px 0 27px;
+}
+
+.advantages__text {
+  padding-bottom: 30px;
+}
+
+ .advantages__list {
+  counter-reset: advantages;
+}
+
+.advantages__item {
+  background-color: @gray;
+  counter-increment: advantages;
+}
+
+.advantages__item:first-child,
+.advantages__item:nth-child(2) {
+  background-color: @blue;
+  color: @white;
+}
+
+.advantages__item:first-child::after {
+  display: block;
+  content: "";
+  width: 320px;
+  height: 260px;
+  background-image: url(../../img/photo-city.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.advantages__item:nth-child(2)::after {
+  display: block;
+  content: "";
+  width: 320px;
+  height: 260px;
+  background-image: url(../../img/photo-bridge.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.advantages__item:nth-child(3)::after,
+.advantages__item:nth-child(4)::after {
+  display: block;
+  content: "";
+  position: absolute;
+  height: 1px;
+  background-color: @darkgray;
+  right: 20px;
+  left: 20px;
+}
+
+.advantages__item-title {
+  padding: 32px 0 11px;
+}
+
+.advantages__item-discription {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 40px;
+}
+
+.advantages__item-discription::before {
+  content: "— №" counter(advantages) " —";
+  display: block;
+  margin-bottom: 17px;
+}
+
+.city-advantages {
+  background-color: @white;
+}
+
+.city-advantages__list {
+  padding: 35px 40px 35px 69px;
+}
+
+.city-advantages__item {
+  position: relative;
+}
+
+.city-advantages__item:not(:last-child) {
+  margin-bottom: 26px;
+}
+
+.city-advantages__item::before {
+  display: block;
+  content: "";
+  width: 40px;
+  height: 40px;
+  left: -50px;
+  top: -10px;
+  position: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.city-advantages__item--housing::before {
+  background-image: url(../../img/city-advantages/icon-house.svg);
+}
+
+.city-advantages__item--souvenirs::before {
+  background-image: url(../../img/city-advantages/icon-souvenirs.svg);
+}
+
+.city-advantages__item--food::before {
+  background-image: url(../../img/city-advantages/icon-food.svg);
+}
+
+.city-advantages__title {
+  padding: 0;
+  margin-bottom: 16px;
+  text-align-last: left;
+}
+
+.city-advantages__text {
+  margin: 0;
+}

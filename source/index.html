@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>City of Sedona</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -40,76 +41,77 @@
     <section class="advantages">
       <div class="wrapper">
         <h2 class="visually-hidden">Наши преимущества</h2>
-        <p class="advantages__slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-        <p class="advantages__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <p class="advantages__slogan title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="advantages__text subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <ol class="advantages__list">
           <li class="advantages__item">
-            <h3 class="advantages__item-title">Настоящий городок</h3>
+            <h3 class="advantages__item-title title">Настоящий городок</h3>
             <p class="advantages__item-discription">Седона не аттракцион для туристов, там течет своя жизнь</p>
-            <div class="city-advantages">
-              <h4 class="visually-hidden">Преимущества городка</h4>
-              <ul class="city-advantages__list">
-                <li class="city-advantages__item city-advantages__item--housing">
-                  <h5 class="city-advantages__title">
-                    Жилье
-                  </h5>
-                  <p>
-                    Рекомендуем пожить в настоящем мотеле, все как в кино!
-                  </p>
-                </li>
-                <li class="city-advantages__item city-advantages__item--souvenirs">
-                  <h5 class="city-advantages__title">
-                    Сувениры
-                  </h5>
-                  <p>
-                    Не только китайского, но и местного производства!
-                  </p>
-                </li>
-                <li class="city-advantages__item city-advantages__item--food">
-                  <h5 class="city-advantages__title">
-                    Еда
-                  </h5>
-                  <p>
-                    Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
-                  </p>
-                </li>
-              </ul>
-            </div>
           </li>
           <li class="advantages__item">
-            <h3 class="advantages__item-title">Там есть мост дьявола</h3>
+            <h3 class="advantages__item-title title">Там есть мост дьявола</h3>
             <p class="advantages__item-discription">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </li>
           <li class="advantages__item">
-            <h3 class="advantages__item-title">Небольшая площадь</h3>
+            <h3 class="advantages__item-title title">Небольшая площадь</h3>
             <p class="advantages__item-discription">Все интересные места находятся очень близко</p>
           </li>
           <li class="advantages__item">
-            <h3 class="advantages__item-title">Красивая дорога</h3>
+            <h3 class="advantages__item-title title">Красивая дорога</h3>
             <p class="advantages__item-discription">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="advantages__item">
-            <h3 class="advantages__item-title">Мало туристов</h3>
+            <h3 class="advantages__item-title title">Мало туристов</h3>
             <p class="advantages__item-discription">Большинство едет в гранд каньон и толпится там</p>
           </li>
         </ol>
+        <div class="city-advantages">
+          <h4 class="visually-hidden">Преимущества городка</h4>
+          <ul class="city-advantages__list">
+            <li class="city-advantages__item city-advantages__item--housing">
+              <h5 class="city-advantages__title title">
+                Жилье
+              </h5>
+              <p class="city-advantages__text">
+                Рекомендуем пожить в настоящем мотеле, все как в кино!
+              </p>
+            </li>
+            <li class="city-advantages__item city-advantages__item--souvenirs">
+              <h5 class="city-advantages__title title">
+                Сувениры
+              </h5>
+              <p class="city-advantages__text">
+                Не только китайского, но и местного производства!
+              </p>
+            </li>
+            <li class="city-advantages__item city-advantages__item--food">
+              <h5 class="city-advantages__title title">
+                Еда
+              </h5>
+              <p class="city-advantages__text">
+                Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <section class="search">
-      <div class="wrapper">
-        <h2 class="search__title">Заинтересовались?</h2>
-        <p class="search__text">Укажите предполагаемые датыпоездки, и мы покажем вам лучшиепредложения гостиниц в седоне
+      <div class="search__inner">
+        <h2 class="search__title title">Заинтересовались?</h2>
+        <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+          седоне
         </p>
         <a class="button search__button" href="#">Найти гостиницу</a>
-        <div class="search__map">
-
-        </div>
+      </div>
+      <div class="search__map">
+        <img src="img/map-mobile.jpg" width="320" height="350" alt="">
       </div>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="wrapper">
+    <div class="page-footer__inner">
       <p class="page-footer__hashtag">#visitsedona</p>
       <div class="social">
         <h3 class="visually-hidden">Давайте дружить!</h3>
@@ -129,9 +131,9 @@
         </ul>
       </div>
       <div class="copyright">
-        <p class="copyright__text">Разработано</p>
         <a class="copyright__link" href="#">
-          <img class="copyright__img" width="27" height="34" src="img/htmlacademy.svg" alt="Логотип html academy">
+          <p class="copyright__link-text">Разработано</p>
+          <img class="copyright__link-img" width="27" height="34" src="img/htmlacademy.svg" alt="Логотип html academy">
         </a>
       </div>
     </div>
