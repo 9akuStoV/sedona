@@ -1,13 +1,29 @@
 .advantages__slogan {
   padding: 32px 0 27px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 510px;
+    margin: 0 auto;
+  }
 }
 
 .advantages__text {
   padding-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 510px;
+    margin: 0 auto;
+  }
 }
 
- .advantages__list {
+.advantages__list {
   counter-reset: advantages;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
 }
 
 .advantages__item {
@@ -19,26 +35,69 @@
 .advantages__item:nth-child(2) {
   background-color: @blue;
   color: @white;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-.advantages__item:first-child::after {
-  display: block;
-  content: "";
-  width: 320px;
-  height: 260px;
-  background-image: url(../../img/photo-city.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+.advantages__item:first-child {
+  @media (min-width: @tablet-width) {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
 }
 
+.advantages__item:nth-child(2) {
+  @media (min-width: @tablet-width) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+}
+
+.advantages__item:first-child::after,
 .advantages__item:nth-child(2)::after {
   display: block;
   content: "";
   width: 320px;
   height: 260px;
-  background-image: url(../../img/photo-bridge.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  grid-row-start: 2;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
+
+.advantages__item:first-child::after {
+  background-image: url(../../img/photo-city.jpg);
+
+  @media (min-width: @tablet-width) {
+
+    grid-column-start: 2;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+
+.advantages__item:nth-child(2)::after {
+  background-image: url(../../img/photo-bridge.jpg);
+
+  @media (min-width: @tablet-width) {
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
 }
 
 .advantages__item:nth-child(3)::after,
@@ -50,10 +109,48 @@
   background-color: @darkgray;
   right: 20px;
   left: 20px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+
+  }
+}
+
+.advantages__item-inner {
+
+  @media (min-width: @tablet-width) {
+    // max-width: 200px;
+    // margin: 0 auto;
+
+  }
+}
+
+.advantages__item:first-child .advantages__item-inner {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+}
+
+.advantages__item:nth-child(2) .advantages__item-inner {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 3;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
 }
 
 .advantages__item-title {
   padding: 32px 0 11px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 40px;
+  }
+
 }
 
 .advantages__item-discription {
@@ -69,54 +166,4 @@
   content: "— №" counter(advantages) " —";
   display: block;
   margin-bottom: 17px;
-}
-
-.city-advantages {
-  background-color: @white;
-}
-
-.city-advantages__list {
-  padding: 35px 40px 35px 69px;
-}
-
-.city-advantages__item {
-  position: relative;
-}
-
-.city-advantages__item:not(:last-child) {
-  margin-bottom: 26px;
-}
-
-.city-advantages__item::before {
-  display: block;
-  content: "";
-  width: 40px;
-  height: 40px;
-  left: -50px;
-  top: -10px;
-  position: absolute;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.city-advantages__item--housing::before {
-  background-image: url(../../img/city-advantages/icon-house.svg);
-}
-
-.city-advantages__item--souvenirs::before {
-  background-image: url(../../img/city-advantages/icon-souvenirs.svg);
-}
-
-.city-advantages__item--food::before {
-  background-image: url(../../img/city-advantages/icon-food.svg);
-}
-
-.city-advantages__title {
-  padding: 0;
-  margin-bottom: 16px;
-  text-align-last: left;
-}
-
-.city-advantages__text {
-  margin: 0;
 }
