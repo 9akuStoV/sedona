@@ -1,10 +1,17 @@
 .main-nav {
   background-color: @blue;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     background-color: @white;
     color: @black;
   }
+}
+
+.main-nav__logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .main-nav__toggle {
@@ -14,6 +21,10 @@
 }
 
 .main-nav__list {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-around;
@@ -21,7 +32,7 @@
 }
 
 .main-nav__item {
-  padding: 10px 0 5px;
+  padding: 8px 0 5px;
   border-bottom: 1px solid @border-bottom;
   border-top: 1px solid @border-top;
 
