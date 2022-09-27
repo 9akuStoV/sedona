@@ -11,27 +11,25 @@
 <body class="page__body">
   <header class="page-header">
     <div class="wrapper">
-      <a class="page-header__logo" href="index.html">
-        <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Sedona">
-      </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--close">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html" class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="photo.html" class="main-nav__link">Фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Форма Отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">HTML ACADEMY</a>
+          </li>
+        </ul>
+        <a class="main-nav__logo" href="#">
+          <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Sedona">
+        </a>
         <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="index.html" class="main-nav__link">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="photo.html" class="main-nav__link">Фото и видео</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Форма Отзыва</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link">HTML ACADEMY</a>
-            </li>
-          </ul>
-        </div>
       </nav>
     </div>
   </header>
@@ -175,7 +173,7 @@
     </div>
 
   </section>
-
+  <script src="js/main-nav.js"></script>
 </body>
 
 </html>

@@ -4,4 +4,15 @@
   line-height: 40px;
   text-transform: uppercase;
   color: @white;
+  background: url(../../img/bg/text-bg.svg) center / 90% no-repeat,
+  url(../../img/bg/triangle-bg.svg) bottom center no-repeat,
+  url(../../img/bg/bg.jpg) center 20% no-repeat;
+  min-height: 446px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 574px;
+    background: url(../../img/bg/text-bg.svg) center no-repeat,
+    url(../../img/bg/triangle-bg.svg) bottom center repeat-x,
+    url(../../img/bg/bg.jpg) center 20% / cover no-repeat;
+  }
 }
