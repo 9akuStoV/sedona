@@ -28,11 +28,16 @@
   @media (min-width: @tablet-width) {
     padding: 158px 18px 60px;
     text-align: center;
+    min-height: 330px;
   }
 }
 
 .city-advantages__item:not(:last-child) {
   margin-bottom: 26px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .city-advantages__item::before {
