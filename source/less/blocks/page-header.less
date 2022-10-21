@@ -4,7 +4,7 @@
   line-height: 40px;
   text-transform: uppercase;
   color: @white;
-  background: url(../../img/bg/text-bg.svg) center / 90% no-repeat,
+  background: url(../../img/bg/text-bg.svg) center / 300px no-repeat,
   url(../../img/bg/triangle-bg.svg) bottom center no-repeat,
   url(../../img/bg/bg.jpg) center 20% no-repeat;
   min-height: 446px;
@@ -14,5 +14,18 @@
     background: url(../../img/bg/text-bg.svg) center no-repeat,
     url(../../img/bg/triangle-bg.svg) bottom center no-repeat,
     url(../../img/bg/bg.jpg) center 20% / cover no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background: url(../../img/bg/text-bg.svg) center no-repeat,
+      url(../../img/bg/triangle-bg.svg) bottom center no-repeat,
+      url(../../img/bg/bg@2x.jpg) 74% 20% / cover no-repeat;
+    }
   }
+
+  // @media (min-width: @desktop-width) and (min-resolution: 2dppx) {
+  //   background: url(../../img/bg/text-bg.svg) center no-repeat,
+  //   url(../../img/bg/triangle-bg.svg) bottom center no-repeat,
+  //   url(../../img/bg/bg@2x4.jpg) 74% 20% / cover no-repeat;
+  // }
+
 }

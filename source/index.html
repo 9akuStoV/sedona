@@ -27,7 +27,11 @@
           </li>
         </ul>
         <a class="main-nav__logo" href="#">
-          <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Sedona">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+            <img class="main-nav__logo-img" src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Sedona">
+          </picture>
         </a>
         <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
       </nav>
@@ -115,7 +119,11 @@
         <a class="button search__button" href="#">Найти гостиницу</a>
       </div>
       <div class="search__map">
-        <img src="img/map-mobile.jpg" width="320" height="350" alt="">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/search__map/map-desktop.jpg">
+          <source media="(min-width: 768px)" srcset="img/search__map/map-tablet.jpg">
+          <img class="search__map-img" src="img/search__map/map-mobile.jpg" width="320" height="350" alt="">
+        </picture>
       </div>
     </section>
   </main>
